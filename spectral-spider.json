@@ -1,0 +1,123 @@
+{
+	"name": "Spectral Spider",
+	"source": "carl-homebrew",
+	"basicRules": true,
+	"size": "M",
+	"type": "monstrosity",
+	"alignment": [
+		"U"
+	],
+	"ac": [
+		{
+			"ac": 13,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"formula": "3d8 + 3",
+		"average": 16
+	},
+	"speed": {
+		"walk": 30,
+		"climb": 30
+	},
+	"str": 12,
+	"dex": 16,
+	"con": 13,
+	"int": 6,
+	"wis": 12,
+	"cha": 4,
+	"skill": {
+		"stealth": "+7"
+	},
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"passive": 11,
+	"cr": "1/4",
+	"trait": [
+		{
+			"name": "Spider Climb",
+			"entries": [
+				"The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+			]
+		},
+		{
+			"name": "Web Walker",
+			"entries": [
+				"The spider ignores movement restrictions caused by webbing."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Bite",
+			"entries": [
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d6 + 2}) piercing damage, and the target must make a {@dc 11} Constitution saving throw, taking 6 ({@damage 2d6}) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+			]
+		}
+	],
+	"environment": [
+		"desert",
+		"forest",
+		"grassland",
+		"hill",
+		"underdark",
+		"urban"
+	],
+	"traitTags": [
+		"Spider Climb",
+		"Web Walker"
+	],
+	"senseTags": [
+		"D"
+	],
+	"damageTags": [
+		"P",
+		"I"
+	],
+	"miscTags": [
+		"MW"
+	],
+	"conditionInflict": [
+		"paralyzed",
+		"poisoned"
+	],
+	"hasFluff": true,
+	"hasFluffImages": true,
+	"tokenUrl": "https://5e.proto.sh/img/MM/Phase Spider.png",
+	"fluff": {
+		"entries": [
+			{
+				"type": "entries",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"A spectral spider possesses the magical ability to phase in and out of the Ethereal Plane. It seems to appear out of nowhere and quickly vanishes after attacking. Its movement on the Ethereal Plane before coming back to the Material Plane makes it seem like it can teleport."
+						]
+					}
+				]
+			}
+		],
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "external",
+					"url": "https://5e.proto.sh/img/bestiary/MM/Phase Spider.jpg"
+				}
+			}
+		]
+	},
+	"bonus": [
+		{
+			"name": "Ethereal Jaunt",
+			"entries": [
+				"As a bonus action, the spider can magically shift from the Material Plane to the Ethereal Plane, or vice versa."
+			]
+		}
+	]
+}
