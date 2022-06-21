@@ -17,7 +17,7 @@
 	"legendaryGroup": [
 		{
 			"name": "Zacheus",
-			"source": "otc",
+			"source": "otc-legendary",
 			"lairActions": [
 				"On initiative count 20 (losing initiative ties), Zacheus can take one lair action to cause one of the following effects:",
 				{
