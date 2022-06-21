@@ -1,0 +1,34 @@
+{
+	"siteVersion": "1.160.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "otc",
+				"abbreviation": "OTC",
+				"full": "one true cult",
+				"url": "",
+				"authors": ["Carl"],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1655786918,
+		"dateLastModified": 1655786918
+	},
+	"legendaryGroup": [
+		{
+			"name": "Zacheus",
+			"source": "otc",
+			"lairActions": [
+				"On initiative count 20 (losing initiative ties), Zacheus can take one lair action to cause one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"Boosters. The bloodwing increases it's speed by 30 ft.",
+						"Absorb blood. The bloodwing absorbs any nearby blood and recharges it's blood cannon.",
+						"Updraft. The Bloodwing's decks suddenly radiate heat causing massive turbulence and random gusts of wind. Until initiative count 20 on the next round, a 60 ft. tall column of air above the deck is considered difficult terrain to all but Zacheus. When a medium or smaller creature flies into that area of starts its turn flying there, it must succeed on a DC 13 Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			]
+		}
+	]
+}

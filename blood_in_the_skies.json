@@ -1,0 +1,811 @@
+{
+	"siteVersion": "1.160.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "otc",
+				"abbreviation": "OTC",
+				"full": "one true cult",
+				"url": "",
+				"authors": ["Carl"],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1655786942,
+		"dateLastModified": 1655786942
+	},
+	"monster": [
+		{
+			"name": "Captain Skritches",
+			"source": "otc",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Winged Kobold"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item studded leather armor|phb|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d6 + 6",
+				"average": 30
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 7,
+			"dex": 16,
+			"con": 12,
+			"int": 11,
+			"wis": 10,
+			"cha": 14,
+			"skill": {
+				"acrobatics": "+5",
+				"intimidation": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Flourish",
+					"entries": [
+						"The captain adds its Charisma modifier to the damage roll for its hand crossbow attacks (included in the attack)."
+					]
+				},
+				{
+					"name": "Ship Legs",
+					"entries": [
+						"The captain has advantage on ability checks and saving throws to resist being knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The captain has advantage on an attack roll against a creature if at least one of the captain's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The captain attacks with each hand crossbow."
+					]
+				},
+				{
+					"name": "Hand Crossbow x2",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 30/120 ft., one target. {@h}10 ({@damage 1d6 + 7}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Shape Up, Ye Dog {@recharge}",
+					"entries": [
+						"Whenever a friendly creature within 30 feet of the captain that can hear it misses with an attack, the captain can yell perilous threats to allow that creature to reroll the attack roll."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Captain of {@creature The Hellspear|otc}"
+				]
+			},
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RNG",
+				"RW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Quentillius Antiphiun Melentor III",
+			"shortName": "Quentillius",
+			"source": "otc",
+			"level": 5,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"wizard"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				11,
+				{
+					"ac": 14,
+					"condition": "with mage armor",
+					"braces": true
+				},
+				{
+					"ac": 18,
+					"condition": "wearing plate armor",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 8",
+				"average": 44
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 14,
+			"wis": 10,
+			"cha": 12,
+			"save": {
+				"wis": "+3"
+			},
+			"skill": {
+				"acrobatics": "+5",
+				"athletics": "+3",
+				"performance": "+4"
+			},
+			"passive": 10,
+			"languages": [
+				"Common",
+				"Auld Thorass",
+				"Seldruin"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Quentillius casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 13}):"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell booming blade|TCE}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell mage armor}",
+								"{@spell shield}",
+								"{@spell silent image}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell gust of wind}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Not excited to be here",
+					"entries": [
+						"Quentillius makes all saving rolls against the {@condition frightened} condition with disadvantage."
+					]
+				},
+				{
+					"name": "Cast-off armor",
+					"entries": [
+						"Quentillius finally invested in cast-off plate armor which he can use an action to remove."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} disadvantage, {@hit 3} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6}) slashing damage."
+					]
+				},
+				{
+					"name": "Magic Flare",
+					"entries": [
+						"{@atk ms,rs} {@hit 5} to hit, reach 5 ft. or range 60 ft., one target. {@h}9 ({@damage 1d12 + 3}) force damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Surge of Artistry {@recharge 4}",
+					"entries": [
+						"Quentillius moves up to his speed, surrounding himself with elemental magic as he moves. Until the end of his turn, Quentillius can move through the space of other creatures. The first time he enters a creature's space on a turn, that creature must succeed on a {@dc 13} Dexterity saving throw or be knocked {@condition prone}. If Quentillius ends its turn in another creature's space, he takes 5 ({@damage 1d10}) force damage and is pushed into the nearest unoccupied space."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.proto.sh/img/bestiary/SCC/First-Year Student.webp"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.proto.sh/img/SCC/First-Year Student.png",
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"O",
+				"S"
+			],
+			"damageTagsSpell": [
+				"T"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Secure Artifact Delivery System",
+			"shortName": "SADS",
+			"alias": [
+				"SADS"
+			],
+			"source": "otc",
+			"size": [
+				"G"
+			],
+			"type": "construct",
+			"alignment": null,
+			"ac": [
+				13
+			],
+			"hp": {
+				"special": "300"
+			},
+			"speed": {
+				"fly": 80,
+				"canHover": false
+			},
+			"str": 30,
+			"dex": 14,
+			"con": 20,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"senses": [
+				"as per crew"
+			],
+			"passive": 0,
+			"trait": [
+				{
+					"name": "Adjust course",
+					"entries": [
+						"Once per turn, SADS may adjust its course by 45° without spending an action."
+					]
+				},
+				{
+					"name": "Set speed",
+					"entries": [
+						"Once per turn, SADS may adjust its speed by either increasing it or decreasing it by 20 ft per round. It can not go higher than SADS' max speed or lower than -10ft per turn."
+					]
+				},
+				{
+					"name": "Ramming",
+					"entries": [
+						"If SADS would run into another vessel at a speed equal to or greater than 20ft per round, it must make a ram attack as a free action."
+					]
+				},
+				{
+					"name": "Weapon Stations",
+					"entries": [
+						"Any officer may take or release control of one of the ship's Ballistas. While a weapon is controlled by an officer, the officer may use their existing ranged attack bonus and damage modifier for siege weapons rather than SADS bonus and modifier. While a weapon is controlled in this way, SADS can not use that weapon during its attack."
+					]
+				},
+				{
+					"name": "Damage Control",
+					"entries": [
+						"As an action, any officer may perform damage control. This grants the vehicle 5 temporary hit points. If the officer is proficient in an appropriate tool set, this action grants 10 temporary hit points instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"SADS may fire all its crewed weapons at once."
+					]
+				},
+				{
+					"name": "Ballistas (two fore, one aft)",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}17 ({@damage 3d10 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Ram",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}26 ({@damage 3d10 + 10}) piercing damage and the target is {@condition grappled} (escape {@dc 15}). Until this grapple ends, SADS can't make a Ram attack against another target."
+					]
+				},
+				{
+					"name": "Ramming speed!",
+					"entries": [
+						"SADS moves 40 ft straight ahead."
+					]
+				},
+				{
+					"name": "Brace for impact!",
+					"entries": [
+						"Until the start of SADS' next turn, all attacks against it are made with disadvantage, and it no longer has disadvantage on saving throws against damaging effects."
+					]
+				},
+				{
+					"name": "Hard to Port/Starboard!",
+					"entries": [
+						"SADS rotates 45° to port or starboard."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Adjust course",
+					"entries": [
+						"SADS rotates 45° to port or starboard."
+					]
+				}
+			],
+			"environment": [
+				"sky"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"grappled"
+			]
+		},
+		{
+			"name": "The Bloodwing",
+			"shortName": "Bloodwing",
+			"source": "otc",
+			"size": [
+				"G"
+			],
+			"type": "construct",
+			"alignment": null,
+			"ac": [
+				13
+			],
+			"hp": {
+				"special": "200"
+			},
+			"speed": {
+				"fly": 80,
+				"canHover": false
+			},
+			"str": 30,
+			"dex": 14,
+			"con": 20,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 0,
+			"trait": [
+				{
+					"name": "Ramming",
+					"entries": [
+						"If the ship would run into another vessel at a speed equal to or greater than 20ft per round, it must make a ram attack as a free action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The ship may fire all of its crewed weapons at once."
+					]
+				},
+				{
+					"name": "Blood cannon {@recharge 5}",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 600/2,400 ft., one target. {@h}42 ({@damage 8d10+2}) piercing damage."
+					]
+				},
+				{
+					"name": "Ballistas (1x port, 1x aft, 1x starboard)",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}17 ({@damage 3d10 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Ram",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}25 ({@damage 3d10+10}) piercing damage and the target is {@condition grappled} (escape {@dc 15}). Until this grapple ends, the ship can't make a Ram attack against another target."
+					]
+				},
+				{
+					"name": "Ramming speed!",
+					"entries": [
+						"The ship moves 40 ft. straight ahead."
+					]
+				},
+				{
+					"name": "Brace for impact!",
+					"entries": [
+						"Until the start of the ship's next turn, all attacks against it are made with disadvantage, and it no longer has disadvantage on saving throws against damaging effects."
+					]
+				},
+				{
+					"name": "Hard to Port/Starboard!",
+					"entries": [
+						"The ship rotates 45° to port or starboard."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Adjust course",
+					"entries": [
+						"The ship rotates 45° to port or starboard."
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"environment": [
+				"sky"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsLegendary": [
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"grappled"
+			]
+		},
+		{
+			"name": "The Hellspear",
+			"source": "otc",
+			"size": [
+				"G"
+			],
+			"type": "construct",
+			"alignment": null,
+			"ac": [
+				13
+			],
+			"hp": {
+				"special": "150"
+			},
+			"speed": {
+				"fly": 100,
+				"canHover": false
+			},
+			"str": 22,
+			"dex": 12,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 0,
+			"trait": [
+				{
+					"name": "To the Max!",
+					"entries": [
+						"When setting speed, the ship may only move at a rate of 15 ft, or 100 ft. This ignores the rules of speed incrementation."
+					]
+				},
+				{
+					"name": "Ultra-Ram",
+					"entries": [
+						"If the ship would run into another vessel at a speed equal to or greater than 20ft per round, it must make a ram attack as a free action."
+					]
+				},
+				{
+					"name": "Death Throes",
+					"entries": [
+						"When this ship reaches 0 hit points, the bound fire elemental breaks free in a glorious explosion. All creatures aboard the vessel, and within 50 feet are subject to 30 ({@damage 10d6}) fire damage, with a dexterity save DC of 16 for half damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Ballista turret",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}17 ({@damage 3d10 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Ram",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}30 ({@damage 5d12}) piercing damage and the target is {@condition grappled} (escape {@dc 15}). Until this grapple ends, the ship can't make a Ram attack against another target."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Adjust course",
+					"entries": [
+						"The ship rotates 45° to port or starboard."
+					]
+				}
+			],
+			"environment": [
+				"sky"
+			],
+			"fluff": {
+				"entries": [
+					"No one in their right mind would sign onto this ship, and fewer still live for very long once aboard. Only Skritches has had any longevity. Propelled by a furiously enraged fire elemental, bound to the ship and agitated by alchemist’s fire, the ship maintains a speed only surpassed by elemental galleons."
+				]
+			},
+			"traitTags": [
+				"Death Burst"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"grappled"
+			]
+		},
+		{
+			"name": "Zacheus of the Oriq",
+			"isNamedCreature": true,
+			"source": "otc",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"warlock"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "typically ",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"misdirecting defense"
+					]
+				}
+			],
+			"hp": {
+				"average": 55,
+				"formula": "10d8 + 10"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 30,
+					"condition": "(winged boots)"
+				},
+				"canHover": false
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 17,
+			"wis": 15,
+			"cha": 18,
+			"save": {
+				"int": "+5",
+				"wis": "+4",
+				"cha": "+6"
+			},
+			"skill": {
+				"arcana": "+5",
+				"deception": "+8",
+				"insight": "+4",
+				"persuasion": "+6"
+			},
+			"passive": 12,
+			"resist": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"Common plus any two languages"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The recruiter casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 14}):"
+					],
+					"will": [
+						"{@spell disguise self}",
+						"{@spell misty step}",
+						"{@spell silent image}"
+					],
+					"daily": {
+						"1": [
+							"{@spell suggestion}"
+						],
+						"2": [
+							"{@spell charm person}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Misdirecting Defense",
+					"entries": [
+						"The AC of the recruiter includes its Charisma modifier while it isn't wearing armor or wielding a shield."
+					]
+				},
+				{
+					"name": "Oriq Mask",
+					"entries": [
+						"The recruiter wears an Oriq mask. While wearing the mask, the recruiter can't be targeted by any divination magic or perceived through magical scrying sensors, and it adds double its proficiency bonus to Charisma (Deception) checks (included above)."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The recruiter makes two Psychic Knife attacks. It can use Spellcasting in place of one of the attacks."
+					]
+				},
+				{
+					"name": "Psychic Knife",
+					"entries": [
+						"{@atk ms,rs} {@hit 6} to hit, reach 5 ft. or range 30 ft., one creature. {@h}21 ({@damage 5d6 + 4}) psychic damage."
+					]
+				}
+			],
+			"legendaryActions": 2,
+			"legendary": [
+				{
+					"name": "Cast a spell (2 actions)",
+					"entries": [
+						"Zacheus casts a spell."
+					]
+				},
+				{
+					"name": "Gift of blood",
+					"entries": [
+						"{@atk ms,rs} {@hit 6} to hit, reach 5 ft. or range 30 ft., one creature. {@h} 3 ({@damage 1d6}) psychic damage. Additionally, the blood magically flows to {@creature The Bloodwing|otc} recharging it's Blood Cannon."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Zacheus",
+				"source": "otc"
+			},
+			"fluff": {
+				"name": "Oriq Recruiter",
+				"source": "SCC",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Oriq recruiters are subtle mages who infiltrate Strixhaven in service to their order. They are adept at blending in, watching for powerful but underperforming mages and students who have fallen through the cracks of the institution. The recruiters approach and befriend these individuals either as potential recruits to the Oriq or as assets who can help the Oriq acquire spells, rare spell components, or knowledge from Strixhaven."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Oriq",
+								"entries": [
+									"The Oriq are a secret society of mages who wield forbidden magic in the service of their leader, Extus Narr. Narr was in consideration for elevation to the role of Oracle of Strixhaven, but when the Founder Dragons passed him over in favor of Jadzi, his bitterness knew no bounds. He now uses the Oriq to gather the spells and magical energy he needs to summon a devastating being, the Blood Avatar, to destroy Strixhaven.",
+									"The Oriq work in secret, infiltrating Strixhaven to search for the magic their master covets and watch for impressionable students and embittered faculty they might turn to their cause. The Oriq take pains to hide their true allegiance and wear masks to hide their identities. These masks have magical properties that function only for their intended wearers."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/SCC/Oriq Recruiter.webp"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.proto.sh/img/SCC/Oriq Recruiter.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"conditionInflictSpell": [
+				"charmed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}
